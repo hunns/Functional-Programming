@@ -22,7 +22,7 @@ public class CombinatorTest {
                 .add(CustomerCombinatorValidator.isPhoneValid())
                 .add(CustomerCombinatorValidator.isAgeValid())
                 .apply(customer);
-
+        System.out.println("---------------------------");
         System.out.println(result);
 
         if (result != ValidationResult.SUCCESS) {
